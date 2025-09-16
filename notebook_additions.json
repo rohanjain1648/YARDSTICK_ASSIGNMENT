@@ -1,0 +1,637 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## 📚 Usage Examples {#examples}\n",
+        "\n",
+        "This section provides comprehensive examples of how to use each component of the conversation management system.\n",
+        "\n",
+        "### 🎯 Learning Objectives\n",
+        "- Understand basic conversation management workflows\n",
+        "- Learn how to configure summarization strategies\n",
+        "- Master information extraction techniques\n",
+        "- Implement error handling and validation\n",
+        "- Monitor system performance and usage\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {},
+      "outputs": [],
+      "source": [
+        "# Example 1: Basic Conversation Management\n",
+        "print(\"🔄 Example 1: Basic Conversation Management\")\n",
+        "print(\"=\" * 50)\n",
+        "\n",
+        "# Initialize the conversation manager\n",
+        "try:\n",
+        "    groq_client = GroqClient(api_key=GROQ_API_KEY)\n",
+        "    conversation_manager = ConversationManager(\n",
+        "        groq_client=groq_client,\n",
+        "        summarization_threshold=5\n",
+        "    )\n",
+        "    \n",
+        "    print(\"✅ Conversation manager initialized successfully\")\n",
+        "    \n",
+        "    # Add sample conversation\n",
+        "    sample_messages = [\n",
+        "        (\"user\", \"Hello, I'm John Doe and I need help with my account\"),\n",
+        "        (\"assistant\", \"Hello John! I'd be happy to help you with your account. What specific issue are you experiencing?\"),\n",
+        "        (\"user\", \"I can't log in to my account. My email is john.doe@email.com\"),\n",
+        "        (\"assistant\", \"I understand you're having trouble logging in. Let me help you troubleshoot this issue.\"),\n",
+        "        (\"user\", \"Thank you! Also, I'm 35 years old and live in San Francisco if that hel
+}  ]
+   ]
+    }\n"
+   ! 🚀**oding c"**Happy       
+ ",      "\n",
+  ases.\n cser specific ur youdapt it fo and ad, modify,extenee to Feel frms. nt systen managemersatioed conveatisticsophbuilding ndation for a solid foues as  servionmentatles imp"Thi        "\n",
+      ,
+  pport\n" and Suontributing  "### 🤝 C
+      ","\n      ",
+  \ntml).hry/typingibran.org/3/lthos.py://docl](httpsng.htmary/typin.org/3/librtho://docs.pyts**: [httpshon Type Hin"- **Pyt    ",
+    .org/)\nn-schemajsos://](httpg/n-schema.ors://jsottphema**: [hSON Sc*J     "- *n",
+   ython)\ai-ppenai/open/othub.comtps://githon](htenai-pypenai/opom/oithub.cttps://g**: [h SDK"- **OpenAI ,
+       "/docs)\noq.comnsole.grs://co/docs](http.comgroqonsole. [https://cmentation**:**Groq Docu     "- ",
+   "\n    ",
+    urces\nResoonal  📚 Additi"###        \n",
+ "
+       ",rting\naleg and rinonitove mnsiprehe comring**: Addto "4. **Moni",
+       g\nbalancing and load  scalinzontaloriImplement h*Scaling**: "3. *   ,
+     \n"uthorization andn anticatioheser autd u: Adation***Authentic   "2. *n",
+     system\ts for the I endpoinAPreate REST Wrapper**: C **API         "1.n",
+oyment\ion DeplProduct  "####       \n",
+   "",
+      insights\ntics andalyon anatiuild converstics**: Bnaly **A        "4.ions\n",
+integratternal  for exsupportd webhook Adks**: hoo*Web      "3. *",
+  ns\n conversatio real-time for responsesamingtrelement sming**: Imp"2. **Strea        
+s\n",vider AI prople for multi Add supportupport**: Si-Model **Mult     "1.
+   \n",d Featuresdvance   "#### A,
+     n"    "\
+    ",ents\nironment envifferor don files ftiigura conf: Createiguration****Conf  "4.       \n",
+ngkiormance tracperfnd ed usage adetail: Add ics**tr  "3. **Me",
+      lls\ne API cang to reducse cachint responmpleme**: Iingach "2. **C    \n",
+    historyersationr convrage fose stoatabad d Ad*:sistence*. **Per       "1
+ nts\n",mprovemediate I Imme      "####\n",
+          "
+ions\n",ens and Exteps## 🚀 Next St   "#     "\n",
+,
+        ework\n"idation framd valing anRobust test"-    n",
+     \mpleson and exaatidocumentsive    "- Exten     
+ies\n",apabilitring c monitoandled logging "- Detai       n",
+ ackoff\ntial bexponeting and  Rate limi    "-
+    **\n",dy Elementseauction-R**Prod"✅       ,
+   "\n"      n",
+ \ handlingorrrion and eate validrehensivomp      "- C
+  ",\nion callingng funct usiionacttion extrinformaed as-b schema JSON      "-n",
+  ns\sation turver on contion basedc summarizaodieri "- P      n",
+ \ strategiesstomizablen with cuizatioent summarntellig"- I    ,
+    *\n"d Features*Advance"✅ **,
+         "\n"       ",
+king\nta tracith metadaement wnagry matohisrsation - Conve   "
+     gic\n",etry loling and rhandbust error ror with lient wrappe "- GroqC  \n",
+     yype safet with full tta modelsersation dad convMessage an    "-     *\n",
+nents* Compo "✅ **Core
+       ",       "\n:\n",
+  withement systemnagon maersatinsive convhere a compestedd and tementempllly iessfu You've succations!ratul  "Cong",
+           "\n  
+ hed\n",lisu've Accompat YoWh  "### 🎉 
+      \n",      "n",
+  \xt Steps and Nemmary 🎓 Su "##    
+   ource": [     "s
+ ": {}, "metadata",
+     down": "markpe "cell_ty    {
+     ,
+ ]
+    }
+     xc()}\")".format_eracebackails:\\n{tet\n🔍 Error d\(f\""    print       \n",
+ backort trace  imp     "  \n",
+   \")ainy agtrnd ion aurat API configurk yo(\"💡 Chec  print "  ,
+       n": {e}\")\n failedemonstratio"❌ Drint(f\   p" ",
+        s e:\ntion at Excep"excep,
+            \n"       "",
+ ly.\")\ncorrectare working ents onm compmajor syste All   int(\"   "    pr",
+     \nfully!\")ess succmpletedration coonst"\\n🎯 Dem  print(\ "  
+       ,\n"   "    
+     \")\n",ing: Robustrror handl  ✅ Eprint(f\"   "    ",
+     \n)\"Partial'}() else 'as_dataresult.htraction_d exls() anult' in locaion_res if 'extractssful': {'Succeextractionrmation  ✅ Infot(f\" prin      "    
+  ")\n",d'}\ triggerery else 'Notummaory.ssation_histconveranager._mted' if demo {'Completion:Summariza"  ✅ t(f\  prin   "    ",
+   \")\n processedmessagesry)} histoen(final_acking: {lMessage tr\"  ✅   print(f   "  n",
+     g\")\rkinment: Woion manage Conversat"  ✅f\rint(    "    p    \n",
+sults:\")n Restratio🎉 Demon\"\\nrint(f  "    p,
+      "\ncsuccess metri# S  "           \n",
+      "    )\n",
+ %M:%S')}\"e('%H:w().strftimetime.noat {dst activity:"⏰ La(f\   print " ",
+       \n}\")y.summary)_historversationanager.con_memo(d{boolmmary: "📝 Has su(f\   print  "       ,
+s}\")\n"tal_turn.toion_historyonversato_manager.cs: {demer turn Total ust(f\"🔄    prin       "n",
+ ry)}\")\_histo: {len(finalcountsage  mes Finalt(f\"💬prin  "    ,
+      \n"ry()tosation_hisverconager.get_man= demo_l_history     fina        "
+   \n",  " 
+      \n", 40) *-\"rint(\"   "    pn",
+     atus\")\tem StSys Final \n📊 Phase 3:int(\"\    pr     "\n",
+   mmarym status suSyste:  Phase 3    "    #",
+    \n   "    ",
+      {e}\")\nailed:traction fon exformati"❌ Inint(f\    pr "    ",
+       on as e:\n Excepti  except    "  ,
+    "  "    \n
+      n",or}\")\err  • {f\"  print(              "   \n",
+     :rorsidation_erlt.valsu_retion extrac error in     for   "       ",
+     :\")\nn Issueslidation⚠️ Va\"\\  print(f          "  
+      \n",errors:alidation__result.v extraction    if        " ,
+   "    \n    "    \n",
+    ")alue}\splay_v {dile():10}:{field.tit"  {status} int(f\      pr    "    ",
+      "\nnd\ fouNotse \"alue elf ve = value iy_valu    displa"        ",
+        \n"\"✗\lse  if value e""✓\= \tus     sta       
+        " :\n",ta.items()xtracted_da.eult_resionxtract in eeld, value    for fi"          n",
+  \:\")rmationtomer Infoacted Cus📋 Extrf\"\\nnt(      pri   "  n",
+            \"    ",
+     /5\")\nelds())}tracted_figet_ex_result.traction(ex{lenfound:   📋 Fields nt(f\"pri             "\n",
+   alid()}\")sult.is_vction_reextra Valid: {  ✅int(f\""        pr    ",
+    }\")\n_score:.1%ncesult.confidection_rence: {extra 🎯 Confide" rint(f\        p        "n",
+\")\ts:sulion RectExtrarint(f\"📊    p   "            \n",
+     "     ,
+    xt)\n"versation_temation(conorinfr.extract_extracto demo_ult =resraction_ ext       "",
+           try:\n    "         \n",
+
+        "()])\n",on_historyersatier.get_conv demo_managt for msg inconten([msg.".joint = \" \sation_texnver "    co",
+       n\nersatiorom the convformation fin# Extract       "    ,
+  \n"  "    n",
+      0)\\" * 4"-int(\   pr
+        " ")\n",xtraction\ormation EPhase 2: Inf\"\\n🔍 t(prin "          on\n",
+ racti extormationase 2: Inf # Ph  "         \n",
+  "          \n",
+       break    "       \n",
+              
+        "\")\n",ration...onst with demtinuing💡 Con"t(\    prin       "      ",
+       \n{e}\")n failed: arizatio Summf\"❌    print(            "    \n",
+    e:xception as pt E     exce  "       
+      n",     \       "    
+        \n",")]}...\00:1y: {summary[\"📝 Summarnt(f pri               "      ",
+  )\nages\"} messges)er_messan(aftion: {learizatsumm\"📊 After     print(f            
+        "\n",\")edcompletion Summarizat"✅ nt(f\       pri         "  ,
+      ry()\n"totion_hisversar.get_condemo_managesages = ter_mes        af  "              e\n",
+ stat after    # Show                "     \n",
+                 "  \n",
+    ize()marum_sger.forcena demo_ma = summary         "            ,
+  on\n"ummarizatiform s    # Per               "   ,
+  ":\n         try "     \n",
+                    "    ,
+ \n"")messages\es)} _messageforetion: {len(bmmariza📊 Before su(f\"  print"           ",
+       n)\_history(sationveronget_cer._managdemos = essagefore_m  be"            ",
+      te\ntabefore s     # Show    "        
+     \n",            " ,
+      \n")-\" * 30nt(\"    pri  "           ",
+   !\")\non Triggeredizatimmartic Su\n🔄 Automaint(\"\pr                   " 4:\n",
+= ent_turns >currd ize anarould_summf sh        i   "
+     \n",edis reach threshold ention wh summarizaigger       # Tr       " ",
+  \n           "\n",
+    \")60]}...ent[:t: {contnten"      Corint(f\ "        p       \n",
+")\_summarize}houlde: {s} | Summariz_turnscurrentns: {9} | Turrole:. {2d}\"  {i:int(f pr              "",
+    \n  "   ,
+        )\n"e(mariz.should_sum_managere = demorizould_summa"        sh
+        urns\n",l_t.totan_historyonversatior.co_manage = demnt_turnsrre       cu     " \n",
+   "        ",
+        \nent)ole, contsage(r.add_mesgero_mana     dem      "",
+     \n1):ript, tion_scte(conversa) in enumeraentont, cor i, (role   "    f    ss\n",
+ ack progreges and trmessa  # Add      "    n",
+     "    \n",
+    ]\  "  ,
+        )\n"\"echcorp.comnez@tr.martik to jennife reset lin a passwordnd send youus aat account stset your Let me remation.act inforont your cve notedt, I'rfec \"Pestant\","assi      (\"  
+        ,\"),\n"reach meu need to  in case yo 555-7890303)s ( number iphonerado and my er, ColoDenving from  callhe way, I'm sense. By tt makes\"Thaer\",   (\"us"              "),\n",
+count.\ur acon yoity lock  a secure might beired or ther have expord maysw pasourssible y. It's pocount statusour ac me check yetion. Lfrustratstand your der"I unt\", \assistan   (\"    
+        " "),\n",s\earunt for 2 yis accousing thbeen d I've anears old I'm 34 yis correct. password 'm sure my ls' but Id credentiasays 'Invali\"It , er\" (\"us "       ,
+       \n"),\"log in?o y ten you trg whe you seeine aror messagspecific errystem. What ur s in ontur accoue yon senifer. I caJenyou "Thank , \t\"stan(\"assi         "    ,
+   ""),\nrp.com\@techcoartinezs jennifer.mail ind my emtinez anifer Marens Je ire, my nam", \"Su"user\ (\   "       ",
+     "),\n?\essddril aame and emade your nse provipleayou Can olve this. help you res to be happyssues. I'd n i having logiou're hear ytoI'm sorry \"ant\", (\"assist "               ",
+"),\nogin\my account lwith uble ro'm having tllo, I\", \"Heser  (\"u        "      ",
+cript = [\nn_s conversatio      "   ,
+     \n"    "     \n",
+tory\")Hison g Conversati 1: Buildin Phase"\\n📋t(\    prin      "n\n",
+  atiol conversInitia1: Phase   "    # ,
+      \n"     "    
+    50)\n",\" *-t(\"  "    prin    ",
+  n\")\nersationv Comer Support: Custorio\\n📞 Scena"nt(\  "    pri
+      ",ion\nversat conomer support Custcenario:ion semonstrat # D   "       ",
+   "    \n      ")\n",
+cessfully\ed sucaliznts initi All componeprint(\"✅  "    
+          \n",      "n",
+  ent)\r(demo_clitractotionEx= Informar mo_extracto   de
+        "     )\n",        "rns\n",
+user tuafter 4 arize  # Summhreshold=4 arization_t        summ
+        ",client,\n"mo_=de_client      groq       "  ,
+ er(\n"ionManag= Conversatmanager  demo_    "   
+    \n",Q_API_KEY)=GROt(api_keyen = GroqCliclientdemo_ "    ",
+       mponents\nsystem coreate main "    # C     
+   ",y:\n "tr",
+       \")\ns...em Componentzing Systialinit\\n🚀 Iint(\"       "prnts\n",
+ onetem compysl sitialize al# In        "  "\n",
+  ",
+    " * 60)\n\"=\int(        "pr\")\n",
+trationDemonslete System "🎭 Compint(\"pr        \n",
+nstrationm Demoplete Syste "# Com
+       ": [urce
+      "so[],ts":  "outpu {},
+     tadata":"me    ,
+  ": nullcution_count   "exe,
+   code""ll_type": 
+      "ce  {,
+  
+    }     ]\n"
+ sons comparie/after clear befor Display "-      \n",
+ erycov reg andor handlinerralidate      "- V,
+   \n"n accuracytractiomation excase infor "- Show       \n",
+ triggersationmmariz suice automattratemons      "- D
+  \n",gementana lifecycle mersationete convmpl Show co
+        "-",on Goals\nrati# 🎯 Demonst       "##",
+ n      "\
+  \n",together.es working iticapabilll system ions of aemonstratensive drehrovides comp section p"This        \n",
+
+        "ions}\n",attrns {#demonsstratioete Demon# 🎭 Compl "#      ": [
+ "source     a": {},
+ etadat "m
+     arkdown",": "ml_type     "cel,
+    {
+    ]
+    }s\n"
+   ter resultts for bet prompctionxtra4. Adjust e       "",
+ y\nracefullons g extractidle partial"3. Han
+        \n",efinitionsschema date . Valid     "2",
+   format\nty and qualit texk input 1. Chec
+        "*\n",:**Solutions "*       ,
+ "\n"     \n",
+  stionte extracomple"- Inc,
+        ailures\n"tion falida"- Schema v       ",
+ ms:**\nto  "**Symp     
+ "\n",        n",
+s\ Errorationlidon Va5: Extractissue   "#### I
+       "\n",       \n",
+rnelbook ker note Restart you      "4.y\n",
+  lly periodicatorion hisr conversatClea       "3. \n",
+ egiesn stratuncatio custom trmplement I"2.
+        ",sholds\nower threation with lmmarizic suomate autabl. En      "1\n",
+  tions:**lu**So
+        "",     "\ns\n",
+   on conversati with largeormance- Slow perf        "rs\n",
+ memory erro Out of
+        "-\n",:**ms*Sympto
+        "* "\n",,
+       \n"ssuesory I 4: Memssue "#### I     ",
+     "\n
+     les)\n",on exampuratinfigdels (see cok moe fallbac     "3. Us",
+   mes\ndel nad mosupporte. Update to  "2
+       ",n\nentatio documroqodels in Gable mavail"1. Check        ",
+ ions:**\n  "**Solutn",
+         "\",
+     \nnsesmodel respod expecte   "- Un     ,
+errors\n"ot found odel n M        "-:**\n",
+*Symptoms    "*",
+      "\n  \n",
+    abilityl Availode Issue 3: M      "####"\n",
+     ",
+      plan\nPIg your Aer upgradinid   "4. Cons   le\n",
+  Groq consos in the  limitusage API Check your  "3.     \n",
+  applicationour equency in yst fruce reque "2. Red    n",
+   off\ackxponential bries with elly retomaticastem aut "1. The sy     
+  s:**\n","**Solution       n",
+      "\\n",
+   rrorssts e Reque29 Too Many       "- 4",
+ \needed`e limit exc: RatitErrorLim `GroqRate     "-
+   *\n",**Symptoms:*
+        "n","\,
+        \n"ngte LimitiRaIssue 2: ###    "#       "\n",
+
+      ions\n", permissroper key has ptheEnsure       "4. \n",
+  solee Groq con key from thate your API3. Regener    "
+     key\n",ers in thecharactes or xtra spac eeck for  "2. Ch      ve\n",
+actiand is correct ur API key rify yo"1. Ve      ",
+  ions:**\n "**Solut       "\n",
+ ",
+        errors\nUnauthorized    "- 401     `\n",
+led faihenticationError: Authentication- `GroqAut    "\n",
+    ptoms:**"**Sym    \n",
+     "       rors\n",
+ntication Er1: API Authe#### Issue  "
+       "\n",        \n",
+utionsues and Solommon Iss  "### 🔧 C: [
+      "source"
+      ,tadata": {}     "me",
+ arkdownpe": "mell_ty  "c   {
+    
+ 
+    },"
+      ].\")olve issues to resions suggestthe 💡low ⚠️, folou see ❌ or t(\"  If y     "prin",
+   )\n!\"eady to useis rsystem  your w ✅,ems sho"  If all it"print(\  ",
+      ary:\")\n Summnostic\n🎯 Diagrint(\"\ "p  ",
+        "\n    n",
+ al\")\is normage emory us\"  ✅ M   print(
+        " \n","else:    n",
+    nel\")\book kerur notestarting yoonsider re  💡 Ct(\"prin      " ,
+     \n"")etected\ dry usageHigh memo\"  ⚠️  print("         ",
+  \nnt > 90:y.perce memor       "if "\n",
+        \n",
+")cent}%\.perge: {memory💿 Memory Usat(f\"  "prin       ")\n",
+ 1f} GB\3):.(1024**able / ory.availMemory: {memable  Availint(f\"  🧠"pr   ",
+     mory()\n_meirtual= psutil.vmemory       "
+  n",til\psu "import        ,
+:\")\n"es Resourctem\\n💾 Sysint(f\"   "pr",
+     nresources\ system  "# Check     ",
+        "\n  ")\n",
+ge}\all {packath: pip instl wi   💡 Instal(f\"  nt  pri   "      ,
+     )\n"\": Missinge} ❌ {packagint(f\"     pr      "    
+  \n",Error: Importcept  ex   "
+       ,")\n"le\vailabe}: A {packag\"  ✅print(f  "             \n",
+ age)(pack__import__         "      ry:\n",
+   t         "n",
+ es:\ed_packag in requirgeor packa     "f
+   ]\n",ping'ime', 'ty'datetses', asclta, 'dan'ai', 'jso= ['opened_packages  "requir       
+\n",")Status:\age \n📦 Pack\\" "print(f",
+       imports\n required Check      "# ,
+     "\n"     ",
+")\nin code\gure fi or conent variableonm_KEY enviret GROQ_API  💡 Snt(\""    pri
+        ",d\")\nfigurekey not con❌ API nt(\"     "    pri\n",
+     "else:        ",
+us\")\nAPI statand n ctioonnenet c your inter 💡 Check" \t(rin    p"           ",
+ \")\n{e}est failed: API t"  ⚠️ nt(f\   pri  "           ",
+ e:\nption asept Exce"    exc      ,
+  n\")\n"gaid try ant ant a mome Waint(\"  💡pri    "            ")\n",
+ched\mit reate li️ Rat(\"  ⚠in       pr     "    ror:\n",
+teLimitErept GroqRa   "    exc,
+     e\")\n"ivct acorrect andPI key is  Aif your  💡 Check rint(\"       p
+        " ")\n",on failed\ticatiI key authen\"  ❌ AP     print(    "       ,
+r:\n"tionErronticatheept GroqAu"    exc    \n",
+              "   
+   \n",acters\")se)} charst_respon{len(tense length: post res\"  📝 Te   print(f            "")\n",
+ ul\ccessfnnection su✅ API co\"       print(    "       ])\n",
+           "",
+     "}\nmessage.\a test , this is ello"Ht\": \\"conten"user\", : \e\"    {\"rol"                ",
+on([\netiomplient.chat_cest_cl = t_response        test"        call\n",
+e API simply a  # Tr"              ",
+  \n          "
+     \")\n",t is validey forma\"  ✅ API k print(      "     ",
+    Y)\nQ_API_KEapi_key=GROroqClient(t_client = G      tes       "  
+ ,  try:\n" "  
+       idity\n",I key valest AP  # T        "  
+"    \n",
+        s\")\n",} characterKEY)OQ_API_(GRngth: {len"  📏 Key le\nt(f "    pri    
+   ")\n",ked_key}\ {masgured:onfi API key c\"  ✅  print(f      "    n",
+\"***\" \> 12 elseOQ_API_KEY) ] if len(GR_API_KEY[-4:ROQ..\" + G:8] + \".API_KEY[ey = GROQ_masked_k    "    ",
+    PI_KEY:\nQ_ARO   "if G\n",
+     )"tatus:\ API Key Sn🔑\\"\t(frin"p      ,
+  \n"ration configu keyeck API    "# Chn",
+    \
+        "")\n",res 3.7+)\ old (requiooon version t  ❌ Pythprint(\"  "    
+      ","else:\n        )\n",
+ible\"on is compathon versi\"  ✅ Pytprint(    "        ",
+\n(3, 7):_version >=  "if python
+       \n",ro}\")_version.mic.{pythonn.minor}_versio}.{pythonersion.major: {python_von Version🐍 Pythnt(f\"pri
+        "",n_info\nsys.versioversion =   "python_
+      t sys\n", "impor       on\n",
+n versieck Pytho   "# Ch
+     ",   "\n     0)\n",
+\"=\" * 5"print(       ",
+ s\")\niagnostic System D"🔍\t(   "prin    s\n",
+ nosticystem Diag"# S    ": [
+    ce"sour      : [],
+"outputs"      : {},
+"ata   "metad
+    null,nt":n_couxecutio      "ee",
+ "code":l_typ
+      "cel   {,
+  ]
+    }
+     es.\n"tential issudentify poon and irationfigustem check your sybelow to cl nostic cele diag thRun
+        " "\n",
+       stics\n",Quick Diagno"### 🔧     \n",
+     "
+       n",tem.\gement sysation manaers convthesing ile uer wh encountou mightsues yis common ns todes solutioion proviThis sect      ""\n",
+      \n",
+    bleshooting}roung Guide {#totiublesho Tro## 🚨   "   
+  urce": ["so,
+      data": {} "meta",
+     arkdownpe": "mty     "cell_},
+    {
+   ]
+    
+    ")"y!\uccessfull sts completedion tesvalidat All \"\\n🎉  "print(
+      \n",     "
+   ",")\nlds()}\ie_extracted_fresult.getst_ fields: {te Extracted\"✅f   "print(",
+     \nta()}\").has_da{test_results data: \"✅ Hant(f "pri      \n",
+ d()}\")s_valit.i{test_resul: Result valid✅ rint(f\"  "p     ",
+ n   ")\,
+     .75\n"ence_score=0nfid"    co      ",
+  : None},\n"email\" \n\",oh\"J\": "name_data={\  extracted  "        (\n",
+ltractionResuesult = Extst_r     "te",
+   ")\ndation:\alilt vraction resu\\n🔍 Extint(\"        "prn",
+tion\validault ion restractest ex      "# T,
+  \n"    "    ",
+\")\nmat}{api_for created: sagemesValid t(f\"✅ "prin,
+        \n"rmat()to_api_fod_message.valipi_format =       "a",
+  \")\nalid messagent=\"V", conte\le=\"usere(rosag= Mesmessage "valid_      ",
+  ")\ndation:\e valiessag"\\n📝 Mrint(\   "pn",
+     dation\essage vali  "# Test m      ",
+     "\n  ")\n",
+ \ation:Data Valid Testing \n🔍nt(\"\      "pri\n",
+   "   \n",
+    }: {e}\")_name__ {type(e)._ected error:t expf\"✅ Caugh"    print(      e:\n",
+  xception as "except E      ",
+  }\")\n error: {eaughtectly c\"✅ Corr  print(f    "  
+    :\n",ror as et ValueEr   "excep\n",
+     't\")ed but didnd have fail Shoulrint(\"❌   "    p",
+     ion([])\nplet.chat_comtest_clientesponse =   r     "  n",
+   \espty message to em dufails should  # Thi         "
+  n",Q_API_KEY)\i_key=GROroqClient(aplient = G_c    test  "",
+         "try:\n  n",
+   :\")\mate forssagid mesting inval\n4️⃣ Tent(\"\  "pri,
+      r API\n" format foagenvalid mess   "# 4. I     ,
+   "\n",
+     ")\n"or: {e}\caught errrectly t(f\"✅ Corprin    "    n",
+    r as e:\cationErrothentipt GroqAu"exce
+        ",t\")\ndn'ed but diave failhould h S\"❌t(prin      "    \n",
+  \"\")nt(api_key= GroqClielient = invalid_c     "   
+   \n",ry:"t        ",
+\")\ney:PI kty AmpTesting e\\n3️⃣ nt(\"pri        ",
+key\n"y API "# 3. Empt       ,
+ \n""
+        \n",")\error: {e}ht caugorrectly nt(f\"✅ C  "    pri",
+      \ne:ueError as Valxcept    "e,
+     \n"t\")ut didn'e failed bShould hav"❌ t(\  "    prin",
+         )\n"    n",
+      1.0\ >lid:# Inva.5  e=1nce_scornfide  co"       ",
+       {},\nta=racted_da      ext "         (\n",
+sultnRe Extractiot =valid_resul   "    in\n",
+     "try:,
+        "ore:\")\nonfidence sc c invalidting️⃣ Tes\\n2\"   "print(  ",
+   re\nidence scoconfvalid  2. In  "#      n",
+    "\    \")\n",
+{e}ror:  caught erCorrectlyt(f\"✅   "    prin     n",
+ r as e:\alueErrot V     "excepn",
+   ")\\ut didn'td bhave faileld \"❌ Shou"    print(,
+        \")\n"sttent=\"Te", convalid_role\(role=\"inssagessage = Meinvalid_me      "    
+  "try:\n",
+        \n",:\")message role invalid ️⃣ Testing(\"\\n1  "print  ",
+    \nage rolenvalid mess 1. I     "#
+   ",      "\n\n",
+  ")ios:\cenaring Error S\n🧪 Testint(\"\"pr",
+        arios\nenous error sc# Test vari  "   "\n",
+         )\n",
+   50" *"=\print(\  "  n",
+    n\")\atiog and Validlinor Handle 4: Errxamp\"\\n🛡️ E"print(    \n",
+    idation Valanddling Han: Error mple 4     "# Exace": [
+   sour],
+      "outputs": [,
+      "{}": adata   "met: null,
+   on_count" "executi   
+   "code",e": "cell_typ   {
+        },
+  ]
+ 
+     : {e}\")"mpleion exammarizatError in suint(f\"❌ "    pr
+         e:\n",Exception asxcept        "e
+ \n",   "        )\n",
+ y)}\"aristory.summation_hn.conversonversatioool(long_cvailable: {b📝 Summary arint(f\"      p   "    
+ ")\n",ns}\al_turistory.toton_hsatition.converng_conversased: {los procesotal turnt(f\"  🔄 T    prin   "     ",
+\")\ny)}final_histor {len(sages:rrent mes💬 Cu  t(f\"   prin   " ,
+     \n"y()_historersationonvt_cion.geversat = long_conhistoryinal_  "    f      ")\n",
+ion State:\rsatinal Conve"\\n📊 Ft(\rin   "    p
+     \n",       "n",
+     \      break    "              ",
+ity\")\nabill avails or modeimito API lt be due tThis mighint(\"💡  pr                       "
+n",")\\ed: {e}ilion fa❌ Summarizatprint(f\"        "                ",
+on as e:\nptiept Exce     exc   "       ,
+     n"         \  "           
+  eak\n",br              "    
+      )\n",\"ary)}istory.summon_hnversatiersation.cong_convl(lomary: {boo Has sumprint(f\"📝                      " ")\n",
+ )}\agesssing_meremainlen(ation: {mmarizges after suessa"📊 Mnt(f\        pri       
+        " ()\n",toryation_hiset_converstion.gversag_consages = lonaining_mes     rem                  " ",
+arization\nummter safn state nversatio co      # Show                "\n",
+                     "     ",
+)\n...\"y[:100]}arary: {summ\"📝 Summ(f  print                    "  ",
+\n\")mpleted coationarizmmnt(f\"✅ Su     pri            "   
+    \n",ze()rce_summariersation.fong_convsummary = lo                       " ",
+:\n     try            "  
+ )\n",".\n..summarizatioggering Tri\\n🔄 "rint(\          p        "  \n",
+s >= 3: turnndze aummari should_s        if
+        "eached\n",d is reshol thrhenzation wri summarigger  # T "      
+       \n",       "        ")\n",
+ ize}\_summar: {shouldizeould summar {role} - Shrn {turns}:(f\"  Tunt       pri       " ,
+ e()\n"ummarizn.should_srsatio long_conveize =ould_summar sh   "       \n",
+     total_turnsstory.versation_hi.conconversationg_rns = lon"        tu,
+        " content)\nsage(role,es.add_mationrsnve long_co "              ",
+n_turns:\nsatiover in concontent role,    "    for",
+     \")\n..ages.ion messonversat"📝 Adding c\"    print(       ",
+  \n"       \n",
+      ]       "n",
+   \")\r account. youfors settingght e rire thigus confion helps uYour locatormation. infthat r fok you  \"Thant\","assistan     (\"         
+  \"),\n", setup for themattersthat  if gton Washinin Seattle,ed catI'm lot. eands grouThat s\", \"\"user   (   "   
+       \n","),rocess.\up pthe setough hrlk you t Let me waed features.dvanc a access to give youunt willusiness accoPerfect! A b \"stant\",ssi    (\"a    "    \n",
+    ),\"nympansulting cor my coaccount fo business "I need a \\",ser    (\"u     "       ,
+""),\n create?\e to you likcount wouldtype of acs. What esemail addred your ot n. I'veyou Emmahank ", \"Tstant\\"assi  (          "  ",
+  \"),\nompany.coma.wilson@cemail is emmd my on an Emma Wils name is, \"My\"user\""        (      ",
+  \"),\nr name? What's youaccount.t up your p you seel h toppybe ha'd \", \"Iant"assist  (\ "      ",
+       t\"),\ncoun new acp mying uhelp sett, I need \", \"Hi  (\"user"      ,
+        [\n"_turns = nversation    co       "rns\n",
+  tuversationon multiple cdd"    # A   \n",
+     "         \n",
+       "    )   \n",
+ old for demoower threshshold=3  # Lion_threarizat     summ"       \n",
+    roq_client,ient=gclq_  gro   "      n",
+     (\ationManagernverstion = Cosaverng_con  lo"  
+        \n", testingzationfor summarin sationger converte a loea  "    # Cr  n",
+    :\      "try\n",
+          "
+ 50)\n",\" *"=int(\"pr
+        n",es\")\egiatzation Str 3: Summariample\"\\n📝 Ex(int"pr
+        egies\n",ation Stratummarizmple 3: S# Exa    "": [
+    urceso      "[],
+"outputs": ,
+      ": {}adatamet  "   ": null,
+ cution_count "exe   e",
+  ": "cod "cell_type{
+        },
+    ]
+      "
+ le: {e}\")xampextraction eor in  Errrint(f\"❌ "    p   
+    s e:\n",n aioeptexcept Exc       "",
+ "    \n        
+ 40)\n",\"-\" *    print( "       \n",
+              "      ")\n",
+ailed: {e}\xtraction fint(f\"❌ E    pr      "    ",
+      ns e:\eption aexcept Exc     "          n",
+ \                    "     ",
+   \")\nr} • {erro   (f\"   print             "          ",
+  ors:\nidation_err result.valfor error in         "             
+  )\n",rrors:\"alidation E\\n⚠️ Vint(f\"         pr         "  ,
+    ors:\n"n_err.validatioesultf r        i "    
+           \n","                ")\n",
+y_value}\}: {displale().titfieldtus} {sta {"   nt(f\   pri                "  ",
+   d\"\n"Not foun \e elsef valuue i_value = val  display                   "",
+   "\n \"✗\e else" if valu\"✓ \   status =        "             ,
+tems():\n"a.icted_dattra.exe in resultluld, va   for fie           "    ",
+  ta:\")\n Datedtrac\n📋 Ex\\"nt(f     pri "            
+  \n",   "         ",
+        )\na)}\"atextracted_den(result.elds())}/{lracted_fit.get_ext: {len(resulds extracted  📊 Fielt(f\"    prin         " n",
+      \")\)}.is_valid(esult ✅ Valid: {rnt(f\"          pri      "   
+  \")\n",ore:.1%}scdence_result.confi {nce:Confide 📊 " (f\  print          "
+        :\")\n", Results Extraction\"\\n🎯rint(f     p       "     ",
+   \n           "        )\n",
+ e['text']amplrmation(snfo.extract_iextractor  result =          "       
+  try:\n",             "",
+   n        \ "       
+}\")\n",mple['text']ext: {sa(f\"📝 Tprint "        ",
+       \n")e['name']}\}: {sample {i📋 Sampl"\\n\ print(f       ",
+        1):\n"ts, chale_rate(sampple in enume  for i, sam "      e\n",
+   ch sampl from eaformation# Extract in      "      \n",
+      "  \n",
+        "    ]
+    n","        }\    n",
+    \"\ow.t ntails righct deare my contao sh want t't old. I donm 25 yearsnd I'ex aAl": \"I'm \"text\            "      
+  \n",\", Informationartial": \"P\"name    \"        
+        \n",   {            ",
+ ",\n"        }
+        \"\n",7-6543.(555) 98e number is  phons. Myelen Los Ange i livand I42  Chen, I'm  is Michaelo, my name: \"Hellext\"\"t                 "  ,
+ t\",\n"rt Requesuppo\": \"S"name       \"          ",
+   {\n"             ",
+   \n},      "      \n",
+    ty.\"k Ci Yorin New live ars old and ye123. I'm 28t +1-555-0ll me a.com or caemailhnson@sarah.jo at  reach meanson. You crah JohnI'm Sa: \"Hi, ext\""t     \ "       ",
+       n Chat\",\mer Serviceto": \"Cus\\"name                " {\n",
+         "        n",
+   [\hats =   sample_c     " \n",
+   r extractiont texts focha# Sample   "    
+      "    \n",",
+        \")\nnitialized extractor iInformation\"✅ print(    "        ent)\n",
+(groq_clitortionExtracnformaor = I    extract  "      \n",
+torion extracormatnfze iiali    # Init  "",
+      "try:\n      ",
+  \n  "
+      \n"," * 50)=\t(\" "prin
+       ",\")\ntionon Extractimanforample 2: I\\n🔍 Ex\"  "print(",
+      action\nation ExtrInform Example 2:         "#e": [
+     "sourc
+ ts": [],   "outpu: {},
+   "metadata"      ull,
+ount": non_cxecuti
+      "e "code",_type":    "cell,
+    {
+  ]
+    }
+      ")" correctly\figuredconis y r API kee you💡 Make surint(\"  pr    "  ",
+    ")\nple: {e}\sation examerbasic convor in rrt(f\"❌ Ein   pr    " 
+    ",as e:\nception "except Ex        \n",
+          "  ,
+")}\")\nmmarize(.should_suon_manager{conversatiummarize: uld shof\"  ⚡ S print(  "   ",
+      \n\").summary)}storyation_hiager.conversan_monatibool(conversmary: { 📝 Has sum" print(f\  "    
+      \n",")rns}\.total_tun_historyioatger.conversna_masation{converurns:   🔄 User tt(f\"  prin   "  ",
+     \nstory)}\")s: {len(hiage Total mess"  💬print(f\        ",
+    s:\")\n"tisticrsation Staonve\"\\n📊 Ct(f   prin   "     \n",
+ istory()sation_honvert_cager.geation_man = convers"    history        ",
+s\nation statplay convers# Dis        "  \n",
+     "      ,
+   ".\")\n}..[:50]entsage: {contmes} ole  📝 Added {r print(f\"      "     
+    ntent)\n",(role, coageger.add_messsation_manaver      con    "      ges:\n",
+ssaample_ment in s role, conte   for    " \n",
+         "       \n",
+   ]      " ",
+  \nps\")
